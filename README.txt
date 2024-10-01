@@ -47,10 +47,10 @@ During login:
 Database Schema
 
 The system uses a simple SQLite database schema for storing user information:
-Field	Type	Description
-username	TEXT	The unique username of the user (Primary Key)
-password_hash	TEXT	The hashed password (using bcrypt)
-mfa_secret	TEXT	The Base32 encoded secret for TOTP generation
+Field	      Type	Description
+username	  TEXT	The unique username of the user (Primary Key)
+password_hash TEXT	The hashed password (using bcrypt)
+mfa_secret	  TEXT	The Base32 encoded secret for TOTP generation
 QR Code for Google Authenticator
 
 The system generates a QR code that encodes a URL in the following format:
